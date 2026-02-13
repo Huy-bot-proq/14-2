@@ -1,0 +1,79 @@
+body {
+    text-align: center;
+    font-family: Arial;
+    overflow: hidden;
+}
+
+.pink {
+    background: url("bg.png") no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+}
+
+
+.love {
+    background: url("bg.png") no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+}
+
+h1 {
+    margin-top: 80px;
+    color: #d63384;
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 20px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+#yesBtn {
+    background: #ff4d6d;
+    color: white;
+    transition: all 0.6s ease; /* thêm dòng này */
+}
+
+
+.love-img {
+    margin-top: 30px;
+    width: 200px;
+}
+
+/* hiệu ứng rơi */
+.fall {
+    position: fixed;
+    top: -10px;
+    font-size: 24px;
+    animation: drop linear forwards;
+}
+
+@keyframes drop {
+    to {
+        transform: translateY(100vh);
+    }
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg) scale(1); }
+    20% { transform: translate(-3px, 0px) rotate(-1deg) scale(1.05); }
+    40% { transform: translate(3px, 2px) rotate(1deg) scale(1.1); }
+    60% { transform: translate(-2px, 1px) rotate(0deg) scale(1.05); }
+    80% { transform: translate(2px, -1px) rotate(1deg) scale(1.1); }
+    100% { transform: translate(1px, -2px) rotate(-1deg) scale(1); }
+}
+
+.shake {
+    animation: shake 0.4s;
+}
+
+.buttons {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
